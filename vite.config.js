@@ -6,6 +6,10 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/quiz-pages/',
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true
+  },
   plugins: [
     vue(),
     tailwindcss(),
